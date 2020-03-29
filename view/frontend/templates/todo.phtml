@@ -1,0 +1,24 @@
+<?php
+
+use Magento\Framework\View\Element\Template;
+/** @var Template $block */
+?>
+
+<ul>
+    <li>task 1</li>
+    <li>task 2</li>
+    <li>task 3</li>
+</ul>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "todo": {
+                        "component": "MageMastery_Todo/js/view/todo"
+                    }
+                }
+            }
+        }
+    }
+</script>
