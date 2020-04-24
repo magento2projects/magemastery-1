@@ -44,7 +44,7 @@ class TaskRepository implements TaskRepositoryInterface
     public function getList(SearchCriteriaInterface $searchCriteria): TaskSearchResultsInterface
     {
         $searchResult = $this->searchResultsFactory->create();
-        $searchCriteria->setSearchCriteria($searchCriteria);
+        $searchResult->setSearchCriteria($searchCriteria);
 
         $this->collectionProcessor->process($searchCriteria, $searchResult);
 
