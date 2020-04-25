@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace MageMastery\Todo\Model\ResourceModel\Task;
 
-use MageMastery\Todo\Api\Data\TaskSearchResultInterface;
+use MageMastery\Todo\Api\Data\TaskSearchResultsInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use MageMastery\Todo\Model\Task;
 use MageMastery\Todo\Model\ResourceModel\Task as TaskResource;
 
-class Collection extends AbstractCollection implements TaskSearchResultInterface
+class Collection extends AbstractCollection implements TaskSearchResultsInterface
 {
     /**
      * @var SearchCriteriaInterface
