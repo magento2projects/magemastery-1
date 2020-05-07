@@ -3,7 +3,7 @@ define(['mage/storage'], function (storage) {
 
     return {
         getList: function () {
-            storage.get('rest/V1/customer/todo/tasks')
+            return storage.get('rest/V1/customer/todo/tasks');
         }
     };
 });
