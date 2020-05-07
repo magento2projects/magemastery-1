@@ -8,4 +8,10 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
+    <route method="POST" url="/V1/customer/todo/task/update">
+        <service class="MageMastery\Todo\Api\TaskStatusManagementInterface" method="change"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
 </routes>
