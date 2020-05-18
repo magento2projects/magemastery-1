@@ -41,7 +41,7 @@ class TaskStatusManagement implements TaskStatusManagementInterface
      */
     public function change(int $taskId, string $status): bool
     {
-        if (in_array($status, ['open', 'complete'])) {
+        if (!in_array($status, ['open', 'complete'])) {
             return false;
         }
 
