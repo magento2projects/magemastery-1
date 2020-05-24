@@ -20,4 +20,10 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
+    <route method="POST" url="/V1/customer/todo/task/create">
+        <service class="MageMastery\Todo\Api\TaskManagementInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
 </routes>
