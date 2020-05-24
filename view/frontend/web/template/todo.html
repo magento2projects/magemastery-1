@@ -21,6 +21,7 @@
 </div>
 
 <!--ko if: ($data.tasks)-->
+<h3>My Tasks</h3>
 <ul class="tasks">
     <li repeat="foreach: tasks, item: 'task'">
         <a data-bind="
@@ -39,4 +40,10 @@
         ">Delete</a>
     </li>
 </ul>
+<!--/ko-->
+
+<!--ko if: ($data.tasks().length == 0)-->
+<div class="message info empty">
+    <span>There are no open tasks. Add a new one.</span>
+</div>
 <!--/ko-->
